@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box
+}
+body{
+    background:url(https://www.twosome.co.kr:7009/microsite/2019/tvcf/common/images/bg_event.jpg);
+}
+.new{
+    position: relative;
+    width: 1094px;
+    height: 500px;
+}
+.wrap{
+    max-width:1200px;
+    margin:auto;
+}
+.box{
+    position: absolute;
+    display: none;
+   width: 1094px;
+    overflow: hidden;
+  
+ 
+}
+.box.on{
+    display:block;
+}
+
+.poster{
+    
+    padding:10px;
+      float: left; 
+       margin-left:60px;
+}
+a{
+    
+}
+.poster a, .menu img{
+    border-radius: 10px;
+}
+.poster a{
+    display: block;
+    width: 415px;
+    height:467px;
+    overflow: hidden;  
+}
+.poster a:hover, .menu li:hover{
+    transform: scale(1.03);
+    opacity: .7;
+   
+}
+.poster img {
+    width: 100%;
+    margin-top:-20px;
+}
+
+.menu{
+    overflow: hidden;
+    float: right;
+    width: 49%;
+    margin-right: 60px;
+}
+
+.menu li{  
+    padding:8px;
+    float: left;
+    width:250px;
+    height: 250px;
+}
+.menu img{
+    width:100%;
+}
+.pointer{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    z-index: 999;
+}
+.pointer ul{
+    display:flex;
+    flex:1;
+    padding: 10px;
+
+}
+.pointer li{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 100%;
+    margin: 10px;
+}
+.pointer li.on{
+    background: red;
+}
